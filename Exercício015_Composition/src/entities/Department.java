@@ -1,9 +1,10 @@
 package entities;
 
 public class Department {
+	
+	//Classe Department
 
 	private String name;
-	
 	
 
 	public Department() {
