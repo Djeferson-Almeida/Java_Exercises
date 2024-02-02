@@ -6,6 +6,12 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Client;
+import entities.Order;
+import entities.OrderItem;
+import entities.Product;
+import entities.Enums.OrderStatus;
+
 public class Program {
 
 	public static void main(String[] args) throws ParseException {
@@ -23,8 +29,34 @@ public class Program {
 		System.out.print("Birth date (DD/MM/YYYY):");
 		Date birthDate = sdf.parse(sc.next());
 		
+		Client client = new Client(name, email, birthDate);
 		
-
+		System.out.println("Enter order data: ");
+		System.out.println("Status: ");
+		OrderStatus status = OrderStatus.valueOf(sc.next());
+		
+		Order order = new Order(new Date(), status, client);
+		
+		System.out.println("How many item to this order? ");
+		int N = sc.nextInt();
+		
+		for(int i=1; i < N; i++) {
+			System.out.println("Enter #"+ i + "item data:");
+			sc.nextLine();
+			String productName = sc.nextLine();
+			System.out.print("Product price: ");
+			double productPrice = sc.nextDouble();
+			System.out.print("Quantity: ");
+			int quantity = sc.nextInt();
+			Product product = new Product(productName, productPrice);
+			
+			OrderItem it = new OrderItem(quantity,productPrice, product);
+			
+			order.addItem(it);	
+		}
+		
+		System.out.println();
+		System.out.println(order);
 		
 		
 		

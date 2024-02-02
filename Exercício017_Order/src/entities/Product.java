@@ -1,6 +1,6 @@
 package entities;
 
-import entities.Client;
+
 
 public class Product {
 

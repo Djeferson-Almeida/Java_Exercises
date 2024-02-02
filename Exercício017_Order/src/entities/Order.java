@@ -11,18 +11,18 @@ import entities.Enums.OrderStatus;
 public class Order {
 
 	public static SimpleDateFormat sdf = new SimpleDateFormat ("dd/MM/yyyy");
-	private Date moment = new Date();
+	private Date moment;
 	private OrderStatus status;
 	private List<OrderItem> items = new ArrayList<OrderItem>();
 	private Client client;
 	
-	public Order(){
-	}
 
-	public Order(Date moment, OrderStatus status, List<OrderItem> item) {
+	
+	
+	public Order(Date moment, OrderStatus status, Client client) {
 		this.moment = moment;
 		this.status = status;
-		items = item;
+		this.client = client;
 	}
 
 	public Date getMoment() {
@@ -35,6 +35,16 @@ public class Order {
 
 	public OrderStatus getStatus() {
 		return status;
+	}
+
+	
+	
+	public Client getClient() {
+		return client;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
 	}
 
 	public void setStatus(OrderStatus status) {

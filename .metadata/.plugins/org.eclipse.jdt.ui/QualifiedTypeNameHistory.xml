@@ -13,6 +13,7 @@
     <fullyQualifiedTypeName name="entities.Enums.WorkerLevel"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="entities.Comment"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="entities.OrderItem"/>
+    <fullyQualifiedTypeName name="entities.Client"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>
