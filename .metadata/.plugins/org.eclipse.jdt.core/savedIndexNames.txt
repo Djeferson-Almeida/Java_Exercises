@@ -4,7 +4,6 @@ INDEX VERSION 1.134+D:\Udemy-Java\.metadata\.plugins\org.eclipse.jdt.core
 3783589934.index
 1764748643.index
 1865797976.index
-3230111381.index
 1896097489.index
 2567774797.index
 1659447300.index
