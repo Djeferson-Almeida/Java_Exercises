@@ -14,8 +14,9 @@ public class Program {
 		
 		File path = new File(strPath);
 		
+		File[] folders = path.listFiles();
 		
-
+		sc.close();
 	}
 
 }
