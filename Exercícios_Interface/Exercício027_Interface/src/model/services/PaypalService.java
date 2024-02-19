@@ -1,16 +1,15 @@
 package model.services;
 
-public class PaypalService {
+public class PaypalService implements OnlinePaymentService{
 
-private Double amount;
-
-private Integer months;
-public Double paymentFee (Double amount) {
-	return amount * months;
+@Override
+public double paymentFee (double amount) {
+	return amount * 0.02;
 }
 
-public Double interest(Double amount,Integer months) {
-	return amount * months;
+@Override
+public double interest(double amount,int months) {
+	return amount * 0.01 * months;
 }
 
 }
