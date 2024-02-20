@@ -5,6 +5,10 @@ import model.enums.Color;
 public abstract class AbstractShape implements Shape {
 
 	private Color color;
+	
+	public AbstractShape() {
+		super();
+	}
 
 	public AbstractShape(Color color) {
 		this.color = color;
