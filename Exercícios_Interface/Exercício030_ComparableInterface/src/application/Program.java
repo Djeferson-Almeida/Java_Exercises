@@ -13,9 +13,11 @@ public class Program {
 
 	public static void main(String[] args) {
 	
+		//Criação da lista
 		List<Employee> list = new ArrayList<>();
 		String path = "D:\\Udemy-Java\\out.txt";
 		
+		//Leitura do Arquivo Csv
 		try (BufferedReader br = new BufferedReader(new FileReader(path))){
 				
 		String employeeCsv = br.readLine();
@@ -24,6 +26,8 @@ public class Program {
 				list.add(new Employee(fields[0], Double.parseDouble(fields[1])));
 				employeeCsv = br.readLine();
 		}
+		
+		// Ordem da lista
 		Collections.sort(list);
 		for(Employee emp : list) {
 			System.out.println(emp.getName() + ", " + emp.getSalary());
