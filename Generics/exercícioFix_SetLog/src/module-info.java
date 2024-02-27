@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module exercícioFix_SetLog {
-}
