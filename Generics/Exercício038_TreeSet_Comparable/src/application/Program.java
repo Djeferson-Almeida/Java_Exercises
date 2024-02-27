@@ -15,7 +15,7 @@ public class Program {
 		set.add(new Product ("Notebook",1200.0));
 		set.add(new Product ("Tablet",400.0));
 		
-		for( Product p : set) {
+		for(Product p : set) {
 			System.out.println(p);
 		}
 		
