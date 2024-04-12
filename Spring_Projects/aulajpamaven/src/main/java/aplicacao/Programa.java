@@ -28,9 +28,6 @@ public class Programa {
 		em.getTransaction().commit();	
 		*/
 
-		//Busca de obj no banco de dados em.find
-		Pessoa p = em.find(Pessoa.class, 2);
-		
 		//em.remove(p) para remover algo do banco de dados, porém precisa começar a transação e fechar
 		System.out.println("Pronto!");
 		em.close();
