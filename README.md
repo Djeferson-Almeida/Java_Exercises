@@ -1,4 +1,5 @@
 # ☕Exercícios para fixação de conhecimento na linguagem Java
+Neste repositório você irá encontrar diversos exercícios que fizeram parte do desenvolvimento dentro da linguagem Java.
 
 ## 📚 Tópicos e Tecnologias Exploradas
 Os projetos contidos neste repositório abrangem uma vasta gama de tópicos, incluindo:
