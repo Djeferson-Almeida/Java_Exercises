@@ -22,7 +22,7 @@ Os projetos contidos neste repositório abrangem uma vasta gama de tópicos, inc
 ## 💾 Persistência de Dados
 * `JDBC` (Java Database Connectivity): Acesso direto a dados em bancos de dados relacionais baseados em SQL.
 * `JPA / Hibernate`: Implementação de persistência de dados com Mapeamento Objeto-Relacional (ORM), facilitando a interação entre objetos Java e bancos de dados.
-* Spring Data JPA: Simplificação do acesso a dados ORM, aproveitando os recursos do Spring Framework.
+* `Spring Data JPA`: Simplificação do acesso a dados ORM, aproveitando os recursos do Spring Framework.
 
 ## 🌐 Desenvolvimento Web e Frameworks
 * `Spring Boot`: Experiência no principal framework Java para desenvolvimento rápido e eficiente de aplicações comerciais e microsserviços.
